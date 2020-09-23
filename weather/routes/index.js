@@ -31,7 +31,7 @@ router.post('/get_weather', async function (req,res) {
   }
   catch (err) {
     console.log(err);
-    res.render('index', {weather: null, error: 'Error: Unable to invoke OpenWeatherMap API'});
+    res.render('index', {weather: null, error: 'Something has gone horribly wrong: Unable to invoke OpenWeatherMap API'});
   }
 
 });
